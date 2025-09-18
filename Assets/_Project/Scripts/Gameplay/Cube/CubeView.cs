@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace _Project.Scripts.Gameplay.Cube
 {
-    public class CubeView : MonoBehaviour
+    public class CubeView : MonoBehaviour, ICubeIdentity
     {
         private static readonly int ColorIdBase = Shader.PropertyToID("_BaseColor");
 

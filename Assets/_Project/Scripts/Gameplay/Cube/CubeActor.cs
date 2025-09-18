@@ -108,7 +108,7 @@ namespace _Project.Scripts.Gameplay.Cube
 
         private void OnCollisionFromPhysics(Collision collision)
         {
-            if (!collision.collider.TryGetComponent(out CubeView other))
+            if (!collision.collider.TryGetComponent(out ICubeIdentity other))
                 return;
 
             if (Id > other.Id)
